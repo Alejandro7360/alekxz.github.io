@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {display:inline-block; }
+*html .clearfix{ height: 1%; }
+.clearfix{ display: block; }
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	font-family: 'Arial', serif;
+}
+.nav{
+	background-color: rgba(89, 89, 89, 0.8);;
+	color: #ffffff;
+	list-style: none;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+.nav > li{
+	display: inline-block;
+	padding: 0 25px 0 25px;
+}
+.nav > li > a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.nav > li > a:hover{
+	color: #c1c1c1;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+.side-col{
+	background-color: #ccc;
+	float: right;
+	padding: 20px 2.5%;
+	height: 100%;
+	width: 25%;
+}
+.main-col{
+	background-color: #fff;
+	float: left;
+	width: 70%;
+}
+.actext{
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: center;
+}
+.player {
+  background-image: url('SCG Cover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header {
+  background-image: url('headerbg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+footer {
+	background-color: rgb(89, 89, 89);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	margin-top:auto; 
+}
+#playlist{
+	list-style: none;
+}
+#playlist > li > a{
+	color: white;
+	text-decoration: none;
+	vertical-align: center;
+}
+.RGroup {
+	background-color: rgba(89, 89, 89, 0.5);
+}
+.RGroup:hover {
+	background-color: rgba(89, 89, 89, 0.25);
+}
+#output
+{
+	width: 600px;
+	height: 400px;
+}

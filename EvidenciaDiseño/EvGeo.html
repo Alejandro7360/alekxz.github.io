@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Alekxz´s site - Programming - Music - Arts</title>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+	
+    <link rel="stylesheet" type="text/css"
+          href="http://yui.yahooapis.com/3.7.3/build/cssreset/cssreset-min.css" data-noprefix>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<center>
+		<h1>SIC</h1>
+		<p>Software innovation Convention</p>
+		</center>
+	<nav>
+		<ul class="nav">
+			<li><a href="EvIndex.html">Home</a></li>
+			<li><a href="EvMusic.html">Música</a></li>
+			<li><a href="EvProgramming.html">Repositorios</a></li> 
+			<li><a href="EvGeo.html">Geolocación</a></li>
+		</ul>
+	</nav>
+	</header>
+	<center>
+	<!--<button id="location-button">Mostrar Ubicación del usuario</button>-->
+	<div id="output"></div>
+	</center>
+	<script>
+		function initMap(){
+			var location = {lat: 20.736780, lng: -103.358610};
+			var map = new google.maps.Map(document.getElementById("output"), {
+				zoom:13,
+				center:location
+			});
+			var marker = new google.maps.Marker({
+				position:location,
+				map:map
+			});
+		}		
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA485ewRtEreMNvRDRrTmkf9rG7BuN4m3Q&callback=initMap"></script>
+	<footer>
+	<center>
+	<a>aqui no hay nada aun :v</a>
+	</center>
+</footer>
+</body>
+</html>
