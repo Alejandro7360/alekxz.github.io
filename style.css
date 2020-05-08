@@ -17,9 +17,15 @@ html {
 body{
 	position: relative;
 	margin: 0;
-	padding-bottom: 6rem;
+	padding-bottom: 3rem;
 	min-height: 100%;
 	font-family: 'Arial', serif;
+}
+body > header > center > h1 {
+	margin: 0;
+}
+body > header > center > p {
+	margin: 0;
 }
 .nav{
 	background-color: rgba(89, 89, 89, 0.8);;
@@ -63,7 +69,6 @@ body{
 .player {
   background-image: url('SCG Cover.jpg');
   background-position: center;
-  background-repeat: no-repeat;
 }
 header {
   background-image: url('headerbg.jpg');
