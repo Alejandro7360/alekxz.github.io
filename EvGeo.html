@@ -25,27 +25,7 @@
 	<!--<button id="location-button">Mostrar Ubicación del usuario</button>-->
 	<div id="output"></div>
 	</center>
-	<script>
-		function initMap(){
-			x = navigator.geolocation;
-			x.getCurrentPosition(success, failure);
-			function success(position){
-			var myLat = position.coords.latitude;
-			var myLng = position.coords.longitude;
-			var location = new google.maps.LatLng(myLat, myLng);
-			//var location = {lat: 20.736780, lng: -103.358610};
-			var map = new google.maps.Map(document.getElementById("output"), {
-				zoom:13,
-				center:location
-			});
-			var marker = new google.maps.Marker({
-				position:location,
-				map:map
-			});
-			}
-			function failure(){}
-		}		
-	</script>
+	
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA485ewRtEreMNvRDRrTmkf9rG7BuN4m3Q&callback=initMap"></script>
 	<footer>
 	<center>
