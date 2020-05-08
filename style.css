@@ -27,14 +27,12 @@ body > header > center > h1 {
 body > header > center > p {
 	margin: 0;
 }
-ul {
-	margin: 0;
-}
 .nav{
 	background-color: rgba(89, 89, 89, 0.8);;
 	color: #ffffff;
 	list-style: none;
 	text-align: center;
+	margin: 0;
 	padding: 20px 0 20px 0;
 }
 .nav > li{
@@ -89,6 +87,7 @@ footer {
 }
 #playlist{
 	list-style: none;
+	margin: 0;
 }
 #playlist > li > a{
 	color: white;
