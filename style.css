@@ -97,6 +97,7 @@ footer {
 }
 .RGroup {
 	background-color: rgba(89, 89, 89, 0.5);
+	height: 20%;
 }
 .RGroup:hover {
 	background-color: rgba(89, 89, 89, 0.25);
